@@ -1,0 +1,336 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(243, 242, 242);
+}
+header{
+    top: 0;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    max-width: 100%;
+    padding: 5px 0px 10px 0px;
+}
+#shopName{
+    display: flex;
+}
+#shopName span{
+    display: flex;
+    flex-direction: column;
+}
+#shopName div{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.headInput{
+    margin-right: 15px;
+    width: 2vw;
+    height: 3vh;
+}
+.headInput:hover{
+    width: 16vw;
+    transition: 2.3s;
+}
+.headButton{
+    margin-left: 15px;
+}
+#first-links a{
+    text-decoration: none;
+    color: rgb(230, 225, 225);
+    padding: 0px 10px 10px 0px;
+    position: relative;
+}
+#last-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#last-div button{
+    background: rgb(232, 183, 60);
+    border: none;
+    border-radius: 5px;
+    width: 20vw;
+    height: 3vh;
+    margin-right: 10px;
+}
+#last-div input{
+    
+}
+#chapter{
+    background-image: url(images/car4.jpg.webp);
+    height: 30vh;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.drive{
+    
+    padding: 60px 0px 0px 20px;
+    color: white;
+}
+.drive h4{
+    padding: 0px 0px 10px 60px;
+}
+.drive p{
+    padding-bottom: 10px;
+}
+#inventory{
+    background: rgb(232, 183, 60);
+}
+.drive button{
+    height: 5vh;
+    width: 34vw;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+}
+#thinBar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background: white;
+    padding: 10px 0px 10px 10px;
+    margin: -30px 30px 0px 30px;
+    border-radius: 20px;
+}
+.thinBarDiv{
+    display: flex;
+}
+.thinBarDiv div{
+    display: flex;
+    align-items: center;
+}
+.thinBarDiv span{
+    margin-left: 10px;
+}
+.thinBarDiv select{
+    border: none;
+}
+#location{
+    display: flex;
+}
+#location div{
+    display: flex;
+    align-items: center;
+}
+#location select{
+    border: none;
+}
+#location button{
+    background: rgb(232, 183, 60);
+    padding: 4px 8px 4px 8px;
+    border: none;
+    border-radius: 4px;
+}
+#location span{
+    margin-left: 10px;
+}
+#trusted{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 10px 10px 10px;
+}
+.flexibleDiv{
+    display: flex;
+    padding: 0px 0px 0px 10px;
+    margin-bottom: 10px;
+}
+.flexibleDiv div{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.trustedDiv{
+    display: flex;
+    padding: 0px 15px 0px 0px;
+    margin-bottom: 10px;
+    border-right: 1px solid black;
+}
+.varifiedDiv{
+    display: flex;
+    padding: 0px 0px 0px 10px;
+    margin-bottom: 10px;
+}
+.varifiedDiv div{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.trustedDiv div{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.trustedDiv span{
+    display: flex;
+    flex-direction: column;
+}
+aside{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    background: white;
+}
+aside button{
+    border: none;
+    background: white;
+}
+main{
+    background: rgb(252, 249, 249);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    overflow: scroll;
+    margin: 0px 10px 20px 10px;
+    padding-bottom: 20px;
+}
+.carContainer{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.carDiv img{
+    width: 50vw;
+    height: 15vh;
+    border-radius: 5px;
+}
+.carP{
+    padding: 0px 0px 4px 13px;
+}
+.price{
+    display: flex;
+    justify-content: space-around;
+}
+.price button{
+    background: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 5px 5px 5px;
+}
+footer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/car7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+footer button{
+    margin: 15px 5px 0px 0px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 4px;
+    border: 0.5px solid white;
+    background: none;
+    color: white;
+}
+#footDiv1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0px 10px 0px;
+}
+.footDiv2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footDiv2 i{
+    margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+    header{
+        display: flex;
+        flex-direction: row;
+    }
+    #shopName{
+        padding-left: 20px;
+    }
+    #shopName h2{
+        margin-left: 0px;
+    }
+    #first-links a{
+        padding-right: 20px;
+    }
+    #first-links a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 0;
+    height: 2px;
+    background: #ffbd17;
+    transition: width 0.3s ease;
+    text-decoration: underline;
+}
+#first-links a:hover::after{
+    width: 100%;
+}
+    #chapter{
+        height: 60vh;
+    }
+    .drive{
+        padding: 150px 0px 0px 100px;
+    }
+    .drive button{
+        width: 15vw;
+    }
+    #thinBar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        padding: 20px 0px 20px 40px;
+        font-size: 1.5rem;
+    }
+    .thinBarDiv{
+        border-right: 1px solid black;
+    }
+    #trusted{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 30px;
+    }
+    .flexibleDiv{
+        border-right: 1px solid black;
+        padding-right: 15px;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    .carContainer{
+        border-radius: 10px;
+    }
+    .carDiv img{
+        height: 40vh;
+        border-radius: 10px;
+    }
+    .price{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 20px 0px 20px;
+    }
+    .carP{
+        padding-left: 20px;
+    }
+    footer{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0px 30px 0px;
+    }
+    #footDiv1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+    }
+
+}
