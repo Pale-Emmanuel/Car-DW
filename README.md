@@ -45,7 +45,7 @@ To run this project on your computer:
 1. Clone the repository:
 
      </bash>
-   git clone YOUR-REPOSITORY-URL
+   git clone git@github.com:Pale-Emmanuel/Car-DW.git
 
 2. Open the project folder:
 
