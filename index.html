@@ -8,27 +8,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" >
 </head>
 <body>
+    
+    <!--The top bar of the webpage which is the heading-->
     <header>
-        <div id="shopName">
+        <a href="index.html" id="shopName">
             <div><i class="fa-brands fa-sketch fa-2x"></i></div>
             <span>
                 <h2>HEISENBERG</h2>
                 <h4>AUTO GALLERY</h4>
             </span>
-        </div>
+        </a>
         <div id="first-links">
-            <a href="#">Home</a>
-            <a href="#">Vehicles</a>
-            <a href="#">About Us</a>
-            <a href="#">Financing</a>
-            <a href="#">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="#vehicles">Vehicles</a>
+            <a href="#about">About Us</a>
+            <a href="#financing">Financing</a>
+            <a href="#contact">Contact</a>
         </div>
         <div id="last-div">
-            <input type="search" placeholder="search" class="headInput">
+            <input type="text" placeholder="search vehicles..." class="headInput">
             <i class="fa-solid fa-user"></i>
-            <button type="button" class="headButton">Sell Your Car</button>
+            <button type="button" class="headButton" id="searchBtn">Search</button>
         </div>
     </header>
+
+    <!--The section with the car background after the dark heading-->
     <article id="chapter">
         <div class="drive">
             <h1><i class="fa-brands fa-sketch"></i>HEISENBERG</h1>
@@ -40,11 +44,14 @@
             <button type="button">Learn More</button>
         </div>
     </article>
+
+    <!--The thin white bar that contains the make, model, price range and location-->
     <section id="thinBar">
+        <!-- Make dropdown-->
         <div class="thinBarDiv">
             <div><i class="fa-solid fa-car"></i></div>
             <span><label for="type"><strong>Make</strong></label><br>
-             <select name="make">
+             <select name="make" id="makeFilter">
                 <option value="">Any Make</option>
                  <option value="Toyota">Toyota</option>
                  <option value="Honda">Honda</option>
@@ -61,17 +68,18 @@
              </select>
             </span>
         </div>
+        <!-- Model dropdown -->
         <div class="thinBarDiv">
             <div><i class="fa-solid fa-car"></i></div>
             <span><label for="type"><strong>Model</strong></label><br>
-             <select name="models">
+             <select name="models" id="modelFilter">
                 <option value="">Any Model</option>
                  <option value="RAV4">RAV4</option>
                  <option value="Civic">Civic</option>
-                 <option value="X5">X5</option>
+                 <option value="3 Series">3 Series</option>
                  <option value="GLC">GLC</option>
                  <option value="Tucson">Tucson</option>
-                 <option value="Mustang">Mustang</option>
+                 <option value="F-150">F-150</option>
                  <option value="RX 350">RX 350</option>
                  <option value="A4">A4</option>
                  <option value="Model 3">Model 3</option>
@@ -81,42 +89,38 @@
              </select>
             </span>
         </div>
+        <!-- Price Dropdown -->
         <div class="thinBarDiv">
             <div><i class="fa-solid fa-tag"></i></div>
             <span><label for="type"><strong>Price Range</strong></label><br>
-             <select name="Price Range">
+             <select name="Price Range" id="priceFilter">
                 <option value="">Any Price</option>
-                 <option value="under $25,000">Under $25,000</option>
-                 <option value="$25,000-$27,000">$25,000-$27,000</option>
-                 <option value="$45,000-$48,000">$45,000-$48,000</option>
-                 <option value="$33,000-$38,700">$33,000-$38,700</option>
-                 <option value="$22,000-$26,500">$22,000-$26,500</option>
-                 <option value="$35,000-$39,000">$35,000-$39,000</option>
-                 <option value="$40,000-$45,000">$40,000-$45,000</option>
-                 <option value="$30,000-$34,500">$30,000-$34,500</option>
-                 <option value="$29,000-$32,000">$29,000-$32,000</option>
-                 <option value="$69,000-$72,000">$69,000-$72,000</option>
-                 <option value="$65,000-$68,000">$65,000-$68,000</option>
-                 <option value="$74,000+">$74,000+</option>
+                 <option value="0-25000">Under $25,000</option>
+                 <option value="25000-35000">$25,000 - $35,000</option>
+                 <option value="35000-50000">$35,000 - $50,000</option>
+                 <option value="50000-9999999">$50,000+</option>
              </select>
             </span>
         </div>
+        <!-- Location Dropdown -->
         <div id="location">
             <div><i class="fa-solid fa-location-dot"></i></div>
             <span><label for="type"><strong>Location</strong></label><br>
-             <select name="location">
+             <select name="location" id="locationFilter">
                 <option value="">Any Location</option>
-                 <option value="Airport City(Accra)">Airport City(Accra)</option>
-                 <option value="Spintex Road(Accra)">Spintex Road(Accra)</option>
-                 <option value="Graphic Road(Accra)">Graphic Road(Accra)</option>
-                 <option value="Community 18(Tema)">Community 18(Tema)</option>
-                 <option value="Adum(Kumasi)">Adum(Kumasi)</option>
-                 <option value="City Centre(Takoradi)">City Centre(Takoradi)</option>
+                 <option value="Airport City (Accra)">Airport City (Accra)</option>
+                 <option value="Spintex Road (Accra)">Spintex Road (Accra)</option>
+                 <option value="Graphic Road (Accra)">Graphic Road (Accra)</option>
+                 <option value="Community 18 (Tema)">Community 18 (Tema)</option>
+                 <option value="Adum (Kumasi)">Adum (Kumasi)</option>
+                 <option value="City Centre (Takoradi)">City Centre (Takoradi)</option>
              </select>
              <button type="button"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
             </span>
         </div>
     </section>
+
+    <!--The section that the thin white bar is overlapping on-->
     <section id="trusted">
         <div class="trustedDiv">
             <div><i class="fa-solid fa-check-double"></i></div>
@@ -147,6 +151,8 @@
             </span>    
         </div>
     </section>
+
+    <!-- The article on top of the cars -->
     <aside>
         <div>
             FEATURED VEHICLES
@@ -154,8 +160,11 @@
         </div>
         <button type="button"><strong>View All Vehicles</strong> <i class="fa-solid fa-arrow-right"></i></button>
     </aside>
-    <main>
-        <div class="carContainer">
+
+    <!-- The four cars container -->
+    <main id="vehicles">
+        <!-- Toyota -->
+        <div class="carContainer" data-make="Toyota" data-model="RAV4" data-price="24500" data-location="Adum (Kumasi)">
             <div class="carDiv">
                 <img src="images/Toyota-RAV4-.jpg" alt="Toyota RAV4">
             </div>
@@ -163,10 +172,13 @@
             <p class="carP">2022 . SUV . Automatic</p>
             <div class="price">
                 <p><strong>$24,500</strong></p>
-                <button>View Details <i class="fa-solid fa-arrow-right"></i></button>
+                <button class="viewDetailsBtn">
+                    View Details <i class="fa-solid fa-arrow-right"></i>
+                </button>
             </div>
         </div>
-        <div class="carContainer">
+        <!-- Mercedes-Benz -->
+        <div class="carContainer" data-make="Mercedes-Benz" data-model="GLC" data-price="38700" data-location="Airport City (Accra)">
             <div class="carDiv">
                 <img src="images/mercedes benz-glc.jpg" alt="Mercedes-Benz-GLC">
             </div>
@@ -174,10 +186,13 @@
             <p class="carP">2023 . SUV . Automatic</p>
             <div class="price">
                 <p><strong>$38,700</strong></p>
-                <button>View Details <i class="fa-solid fa-arrow-right"></i></button>
+                <button class="viewDetailsBtn">
+                    View Details <i class="fa-solid fa-arrow-right"></i>
+                </button>
             </div>
         </div>
-        <div class="carContainer">
+        <!-- BMW -->
+        <div class="carContainer" data-make="BMW" data-model="3 Series" data-price="32900" data-location="Adum (Kumasi)">
             <div class="carDiv">
                 <img src="images/BMW.jpg" alt="BMW 3 Series">
             </div>
@@ -185,10 +200,13 @@
             <p class="carP">2022 . Sedan . Automatic</p>
             <div class="price">
                 <p><strong>$32,900</strong></p>
-                <button>View Details <i class="fa-solid fa-arrow-right"></i></button>
+                <button class="viewDetailsBtn">
+                    View Details <i class="fa-solid fa-arrow-right"></i>
+                </button>
             </div>
         </div>
-        <div class="carContainer">
+        <!-- Ford -->
+        <div class="carContainer" data-make="Ford" data-model="F-150" data-price="45400" data-location="Airport City (Accra)">
             <div class="carDiv">
                 <img src="images/Ford F-150.jpg" alt="Ford F-150">
             </div>
@@ -196,10 +214,69 @@
             <p class="carP">2025 . Pickup . Automatic</p>
             <div class="price">
                 <p><strong>$45,400</strong></p>
-                <button>View Details <i class="fa-solid fa-arrow-right"></i></button>
+                <button class="viewDetailsBtn">
+                    View Details <i class="fa-solid fa-arrow-right"></i>
+                </button>
             </div>
         </div>
     </main>
+
+    <!-- About us section -->
+    <section id="about">
+        <div class="aboutContainer">
+           <h2>About Heisenberg Auto Gallery</h2>
+           <p>
+               Welcome to Heisenberg Auto Gallery, your trusted destination
+               for quality vehicles. We are committed to helping customers
+               find reliable vehicles that match their preferences and budgets.
+           </p>
+           <p>
+               Our goal is to make buying and selling vehicles simple,
+               convenient and transparent.
+           </p>
+        </div>
+    </section>
+
+    <!-- Financing Section -->
+    <section id="financing">
+        <div class="financingContainer">
+            <h2>Vehicle Financing</h2>
+            <p>
+                Find your dream vehicle with flexible financing options.
+                We help you explore payment arrangements that suit your budget.
+            </p>
+            <p>
+                Contact our team to discuss available financing options
+                and the requirements for purchasing your vehicle.
+            </p>
+            <a href="#contact" class="financingButton">
+                Contact Us
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <div class="contactContainer">
+            <h2>Contact Us</h2>
+            <p>Have questions about a vehicle? Get in touch with our team.</p>
+            <form id="contactForm">
+                <input type="text" id="visitorName" placeholder="Your Name" required>
+
+                <input type="email" placeholder="Your Email" required>
+
+                <input type="text" placeholder="Subject" required>
+
+                <textarea placeholder="Your Message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <!-- Hidden green successful form display -->
+            <p id="successMessage"></p>
+        </div>
+    </section>
+
+    <!-- The last section of the webpage which is the footer -->
     <footer>
         <div>
             <h1>Sell Your Car</h1>
@@ -228,6 +305,19 @@
             </div>
         </div>
     </footer>
+
+    <!-- Car View details section -->
+    <div class="carModal" id="carModal">
+    <div class="modalContent">
+        <span class="closeModal">&times;</span>
+        <img src="" alt="Vehicle Image" id="modalImage">
+        <h2 id="modalTitle"></h2>
+        <p id="modalYear"></p>
+        <h3 id="modalPrice"></h3>
+        <p id="modalLocation"></p>
+    </div>
+
+</div>
     <script src="script.js"></script>
 
 </body>
