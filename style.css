@@ -80,7 +80,7 @@ header{
 }
 .drive{
     
-    padding: 60px 0px 0px 20px;
+    padding: 30px 0px 0px 20px;
     color: white;
 }
 .drive h4{
@@ -106,7 +106,7 @@ header{
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     background: white;
-    padding: 10px 0px 10px 10px;
+    padding: 10px 0px 10px 6px;
     margin: -30px 30px 0px 30px;
     border-radius: 20px;
 }
@@ -131,6 +131,7 @@ header{
     align-items: center;
 }
 #location select{
+    width: 100px;
     border: none;
 }
 #location button{
@@ -547,6 +548,9 @@ footer button{
     }
     .thinBarDiv{
         border-right: 1px solid black;
+    }
+    #location select{
+        width: 140px;
     }
     #trusted{
         display: flex;
